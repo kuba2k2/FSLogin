@@ -4,9 +4,6 @@ plugins {
     id 'maven-publish'
 }
 
-group 'pl.szczodrzynski'
-version '1.0.1'
-
 repositories {
     mavenCentral()
 }
@@ -39,7 +36,6 @@ publishing {
     publications {
         gpr(MavenPublication) {
             from(components.java)
-            groupId 'pl.szczodrzynski'
             artifactId 'fslogin'
         }
     }
